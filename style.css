@@ -1,0 +1,177 @@
+.ubuntu-regular {
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ubuntu-medium {
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    background-color: antiquewhite;
+}
+
+header { 
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+header img {
+    height: 100%;
+}
+
+header h3 {
+    font-size: 50px;
+    font-family: "Ubuntu"
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-h3:hover{
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.header-a:hover{
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+main{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/gettyimages-942452228-1542682661\ \(1\).jpeg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible{
+    opacity: 1
+}
+
+.main-cont{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.main-cont h2{
+    font-size: 70px;
+    font-family: "Ubuntu";
+    margin: 100px 0 0 5%
+}
+
+.card-div{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: 200px
+}
+
+.card{
+    width: 400px;
+    height: 550px;
+    background-color: #ff805f;
+    border-radius: 20px;
+    margin: 50px 25px 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.card-image{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s ease-in-out;
+}
+
+.card .product, .price {
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    opacity: 1; /* Initially visible */
+    visibility: visible; /* Ensure elements are visible initially */
+    transition: all 1s ease;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+.card:hover{
+    padding: 0;
+    transition: all .5s ease-in-out;
+}
+
+.card:hover .card-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.card:hover .product,
+.card:hover .price {
+    opacity: 0; /* Fade out */
+    visibility: hidden; /* Hide the element completely */
+    height: 0;
+    transition: all .3s ease-in-out;
+}
+
+.menu-main{
+    display: flex;
+}
+
+.menu-img{
+    width: 40%;
+    margin: 10vh auto;
+    margin-top: 30vh
+}
