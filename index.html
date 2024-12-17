@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Blessed Bakes</title>
 </head>
@@ -13,35 +14,37 @@
     <header>
         <h3><a  class="header-a" href="./menu.html">MENU</a></h3>
         <img src="./images/BlessedBakesIconTransparent.png"/>
-        <h3 class="header-h3">ORDER</h3>
+        <h3 class="header-h3"><a class="header-a" href="./order.html">ORDER</a></h3>
     </header>
 
     <main>
-        <div class="banner"></div>
+        <div class="banner">
+            <h1>Blessed Bakes</h1>
+        </div>
 
         <div class="main-cont">
 
             <h2 class="fade-in">CAKES</h2>
             <div class="card-div fade-in">
                 <div class="card">
-                    <div class="card-image" style="background-image: url(./images/198105031.jpg);"></div>
+                    <div class="card-image" style="background-image: url(./images/IMG_5923.jpg);"></div>
                     <p class="product">Vanilla Bean Cupcakes With American Buttercream</p>
-                    <p class="price">$20</p>
+                    <p class="price">$2.50+</p>
                 </div>
                 <div class="card">
-                    <div class="card-image" style="background-image: url(./images/gettyimages-942452228-1542682661.png);"></div>
+                    <div class="card-image" style="background-image: url(./images/IMG_5882.jpg);"></div>
                     <p class="product">Pumpkin Spice Cupcakes With Cinnamon Buttercream</p>
-                    <p class="price">$20</p>
+                    <p class="price">$2.50+</p>
                 </div>
                 <div class="card">
                     <div class="card-image" style="background-image: url(./images/gettyimages-942452228-1542682661.png);"></div>
                     <p class="product">Custom Cupcakes</p>
-                    <p class="price">$20</p>
+                    <p class="price">$2.50+</p>
                 </div>
                 <div class="card">
-                    <div class="card-image" style="background-image: url(./images/198105031.jpg);"></div>
+                    <div class="card-image" style="background-image: url(./images/Screenshot\ 2024-12-15\ at\ 1.50.34\ PM.png);"></div>
                     <p class="product">Custom Cakes</p>
-                    <p class="price">$20</p>
+                    <p class="price">$13+</p>
                 </div>
 
             </div>
@@ -49,43 +52,44 @@
             <h2 class="fade-in">COOKIES</h2>
             <div class="card-div  fade-in">
                 <div class="card">
-                    <div class="card-image" style="background-image: url(./images);"></div>
-                    <p class="product">French Silk Pie Cookioes</p>
-                    <p class="price"></p>
+                    <div class="card-image" style="background-image: url(./images/IMG_7910.JPG);"></div>
+                    <p class="product">French Silk Pie Cookies</p>
+                    <p class="price">$10+</p>
                 </div>
+                </a>
                 <div class="card">
-                    <div class="card-image" style="background-image: url(./images);"></div>
+                    <div class="card-image" style="background-image: url(./images/IMG_7328.jpg);"></div>
                     <p class="product">Pumpkin Pie Cookies</p>
-                    <p class="price"></p>
+                    <p class="price">$10+</p>
                 </div>
                 <div class="card">
-                    <div class="card-image" style="background-image: url(./images);"></div>
+                    <div class="card-image" style="background-image: url(./images/chocolate-cookies-on-wooden-table-ai-generative-photo.jpg);"></div>
                     <p class="product">Cookies</p>
-                    <p class="price"></p>
+                    <p class="price">$10+</p>
                 </div>
             </div>
 
             <h2 class="fade-in">MISCELLANEOUS</h2>
             <div class="card-div  fade-in">
                 <div class="card">
-                    <div class="card-image" style="background-image: url(./images);"></div>
+                    <div class="card-image" style="background-image: url(./images/IMG_6396.jpg);"></div>
                     <p class="product">Layered Berry Pavlova</p>
-                    <p class="price"></p>
+                    <p class="price">$50</p>
                 </div>
                 <div class="card">
-                    <div class="card-image" style="background-image: url(./images);"></div>
+                    <div class="card-image" style="background-image: url(./images/IMG_6674.jpg);"></div>
                     <p class="product">Chocolate Brownie Trifle</p>
-                    <p class="price"></p>
+                    <p class="price">$55</p>
                 </div>
                 <div class="card">
-                    <div class="card-image" style="background-image: url(./images);"></div>
+                    <div class="card-image" style="background-image: url(./images/IMG_3372.jpg);"></div>
                     <p class="product">Lemon Meringue Pie</p>
-                    <p class="price"></p>
+                    <p class="price">$70</p>
                 </div>
                 <div class="card">
-                    <div class="card-image" style="background-image: url(./images);"></div>
+                    <div class="card-image" style="background-image: url(./images/IMG_6529.jpg);"></div>
                     <p class="product">Eclairs</p>
-                    <p class="price"></p>
+                    <p class="price">$3-32</p>
                 </div>
             </div>
                 
@@ -108,7 +112,7 @@ const observer = new IntersectionObserver((entries, observer) => {
             observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.1 }); // Trigger when 50% of the element is in view
+}, { threshold: 0.1 }); // Trigger when 10% of the element is in view
 
 // Observe all the fade-in elements
 fadeInElements.forEach(element => observer.observe(element));
